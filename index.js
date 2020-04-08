@@ -22,7 +22,7 @@ function help(msg) {
 
 function epenis(msg) {
     const Size = Math.floor(Math.random() * 101)
-    const reply = "8="
+    let reply = "8="
 
     for (let step = 0; step < Size; step++) {
         reply = reply + "="
