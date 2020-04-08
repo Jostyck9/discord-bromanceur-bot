@@ -13,7 +13,22 @@ function filterContent(content) {
 }
 
 function help(msg) {
-    msg.reply("\nThe bromanceur bot\n```brotitude```let's see how bro you are\n```brovoice join```ready to hear the greatest thing on earth ?\n```bro gabin```surprise :smirk")
+    msg.reply("\nThe bromanceur bot\n\
+    ```brotitude```let's see how bro you are\n\
+    ```brovoice join```ready to hear the greatest thing on earth ?\n\
+    ```bro gabin```surprise :smirk:\n\
+    ```e-penis```show the world your e-penis")
+}
+
+function epenis(msg) {
+    const Size = Math.floor(Math.random() * 101)
+    const reply = "8="
+
+    for (let step = 0; step < Size; step++) {
+        reply = reply + "="
+    }
+    reply = reply + "3"
+    msg.reply(reply)
 }
 
 client.on('ready', () => {
@@ -47,6 +62,8 @@ client.on('message', msg => {
         msg.reply(toReply);
     } else if (content[0] == 'bro' && content[1] == "gabin") {
         msg.reply("https://media.discordapp.net/attachments/552121226626334720/647509469030383633/IMG_20180426_001300_Bokeh.png");
+    } else if (content[0] == 'epenis') {
+        epenis(msg)
     }
 });
 
