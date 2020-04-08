@@ -62,7 +62,7 @@ client.on('message', msg => {
         msg.reply(toReply);
     } else if (content[0] == 'bro' && content[1] == "gabin") {
         msg.reply("https://media.discordapp.net/attachments/552121226626334720/647509469030383633/IMG_20180426_001300_Bokeh.png");
-    } else if (content[0] == 'epenis') {
+    } else if (content[0] == 'e-penis') {
         epenis(msg)
     }
 });
