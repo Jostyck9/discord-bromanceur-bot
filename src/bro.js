@@ -1,3 +1,5 @@
+const Discord = require('discord.js');
+
 async function manage(msg, content) {
     if (content.length == 1)
         return;
@@ -25,11 +27,18 @@ async function manage(msg, content) {
 }
 
 function help(msg) {
-    msg.reply("\nThe bromanceur bot\n\
-    ```bro atitude```let's see how bro you are\n\
-    ```bro gabin```surprise :smirk:\n\
-    ```bro epenis```show the world your e-penis\n\
-    ```brovoice join```ready to hear the greatest thing on earth ?");
+    const exampleEmbed = new Discord.MessageEmbed()
+    .setTitle('Help')
+    .setColor('#ff0000')
+	.setAuthor('Le Bromanceur ❤️', 'https://media.discordapp.net/attachments/653697192363819049/697822632963473408/unknown.png', 'https://github.com/Jostyck9/discord-bromanceur-bot')
+	.setThumbnail('https://media.discordapp.net/attachments/653697192363819049/697822632963473408/unknown.png')
+	.addFields(
+		{ name: '> **bro attitude**', value: "let's see how bro you are" },
+		{ name: '> **bro epenis**', value: 'surprise :smirk:'},
+        { name: '> **bro gabin**', value: 'show the world your e-penis'},
+        { name: '> **brovoice join**', value: 'ready to hear the greatest thing on earth ?'},
+	)
+    msg.channel.send(exampleEmbed);
 }
 
 function attitude(msg) {
