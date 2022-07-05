@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Jostyck9/discord-bromanceur-bot#readme",
   "dependencies": {
-    "@discordjs/opus": "^0.1.0",
+    "@discordjs/opus": "^0.8.0",
     "discord.js": "^12.1.1",
     "ffmpeg-static": "^4.1.0",
     "ytdl-core": "^2.0.1"
